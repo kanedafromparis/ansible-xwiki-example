@@ -1,2 +1,5 @@
 --- 
-#please Fill this files with the correct value ;-)
+-  hosts: nodexwiki
+   vars:    
+   roles:
+    - ansible-xwiki-jdk
