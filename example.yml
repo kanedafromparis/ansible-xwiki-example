@@ -1,8 +1,8 @@
 --- 
 -  hosts: nodexwiki
    vars: 
-    java_folder: "/usr/lib/jvm"
-    java_versions: "oracle-java8-installer"
-    java_alias: "java-8-oracle"
+
    roles:
     - ansible-xwiki-jdk
+    - ansible-xwiki-mysql
+    - ansible-xwiki-tomcat
