@@ -45,11 +45,17 @@ git clone https://github.com/kanedafromparis/ansible-xwiki-example.git &&
 ansible-playbook ansible-xwiki-example/example.yml 
 
 
-To Verifier les  solutions :
-(Si vous utiliser Virtualbox)
- - On remets les VM à zéro
- ''' VBoxManage controlvm "nodexwiki01" stop && VBoxManage snapshot "nodexwiki01" restore "Base-Wheezy" && VBoxManage startvm "nodexwiki01" headless  
- 
- - set the vm to default states 
- - cd ansible-xwiki-example && git checkout sol-xxx && cp ..
+###Pour Verifier les  solutions :
+(avec Virtualbox VM to to the exercices)
+_stop yours VM, restore to the initial snapshot start you vm back_
 
+```
+ VBoxManage controlvm "nodexwiki01" stop && \
+ VBoxManage snapshot "nodexwiki01" restore "Base-Wheezy" && \
+ VBoxManage startvm "nodexwiki01" headless  
+``` 
+### Set the vm to default states
+```
+cd ansible-xwiki-example && git checkout sol-xxx \
+&& ansible-playbook ansible-xwiki-example/example.yml
+```

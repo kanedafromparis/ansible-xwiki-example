@@ -42,7 +42,7 @@ Each playbook focus on a different feature of ansible :
  - ansible-xwiki-ctrl : git installations, services hanlder
 
 Exercices :
- - install only-jdk (solution branch not yet)
+ - install only-jdk8 (solution branch not yet)
  - install xwiki by default (solution branch not yet)
  - install xwiki with jdk8 (solution branch not yet)
  - install xwiki without xctrl (solution branch not yet)
@@ -56,9 +56,9 @@ Exercices :
 _stop yours VM, restore to the initial snapshot start you vm back_
 
 ```
- VBoxManage controlvm "nodexwiki01" stop && \
+ VBoxManage controlvm "nodexwiki01" poweroff && \
  VBoxManage snapshot "nodexwiki01" restore "Base-Wheezy" && \
- VBoxManage startvm "nodexwiki01" headless  
+ VBoxManage startvm "nodexwiki01" --type headless  
 ``` 
 ### Set the vm to default states
 ```
