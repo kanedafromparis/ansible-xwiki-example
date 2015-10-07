@@ -1,9 +1,10 @@
 # Ansible-xwiki-example
 
 This is  example for xwiki deployment using ansible
+
 _WARNING : Xwiki start with the distribution wizard, so it's normal and the exercice won't go futher._
 
-Requisit : 
+## Requisit : 
 You are supposed to have 2 VM :
 
  - nodexwiki01
@@ -27,6 +28,7 @@ Host nodexwiki01 nodexwiki02 nodexwiki nodemysql
 10.0.6.5        nodemysql nodexwiki02
 ```
 
+## Roles
 This example use thoses roles :
 - ansible-xwiki-jdk 
 - ansible-xwiki-mysql
@@ -35,7 +37,7 @@ This example use thoses roles :
 
 Each playbook focus on a different feature of ansible :
  - ansible-xwiki-jdk : package installation (here debian), use parameter to get various versions
- - ansible-xwiki-mysql : Share fact between playbooks
+ - ansible-xwiki-mysql : share fact between playbooks
  - ansible-xwiki-tomcat : template and links
  - ansible-xwiki-ctrl : git installations, services hanlder
 
