@@ -5,21 +5,27 @@ _WARNING : Xwiki start with the distribution wizard, so it's normal and the exer
 
 Requisit : 
 You are supposed to have 2 VM :
+
  - nodexwiki01
  - nodexwiki02
-please update your ~/.ssh/config and /etc/hosts accordingly
-Those key are 
 
-Mine are 
- ~/.ssh/config
+Please update your ~/.ssh/config and /etc/hosts accordingly
+
+
+~/.ssh/config
+
+```bash
 Host nodexwiki01 nodexwiki02 nodexwiki nodemysql
         User ansible
         IdentityFile ~/.ssh/id_rsa_ansible
-        
+```
+
 /etc/hosts        
+
+```
 10.0.6.4        nodexwiki nodexwiki01
 10.0.6.5        nodemysql nodexwiki02
-
+```
 
 This example use thoses roles :
 - ansible-xwiki-jdk 
