@@ -49,11 +49,18 @@ Exercices :
  - install xwiki on 2 servers with cluster on (solution not yet)
  - install xwiki by default but using thoses modules from ansible-galaxy (solution not yet)
 
-To check solutions :
+### To check my solutions :
 (if you use Virtualbox VM to to the exercices)
- - stop yours VM, restore to the initial snapshot start you vm back
- ''' VBoxManage controlvm "nodexwiki01" stop && VBoxManage snapshot "nodexwiki01" restore "Base-Wheezy" && VBoxManage startvm "nodexwiki01" headless  
- 
- - set the vm to default states 
- - cd ansible-xwiki-example && git checkout sol-xxx && ansible-playbook ansible-xwiki-example/example.yml
+_stop yours VM, restore to the initial snapshot start you vm back_
+
+```
+ VBoxManage controlvm "nodexwiki01" stop && \
+ VBoxManage snapshot "nodexwiki01" restore "Base-Wheezy" && \
+ VBoxManage startvm "nodexwiki01" headless  
+``` 
+### Set the vm to default states
+```
+cd ansible-xwiki-example && git checkout sol-xxx \
+&& ansible-playbook ansible-xwiki-example/example.yml
+```
 
