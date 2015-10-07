@@ -6,3 +6,4 @@
     - ansible-xwiki-jdk
     - ansible-xwiki-mysql
     - ansible-xwiki-tomcat
+    - ansible-xwiki-war
